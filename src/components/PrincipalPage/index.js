@@ -2,6 +2,7 @@ import { useContext } from 'react';
 
 import FilmCard from '../FilmCard';
 import FilmSearch from '../FilmSearch';
+import PeopleSearch from '../People';
 
 import { FilmInfoContext } from '../../context/FilmInfoContext';
 
@@ -22,7 +23,15 @@ export default function PrincipalPage() {
 						<FilmSearch />
 					</div>
 
-					<div className="showcase-down"></div>
+					<div className="showcase-down">
+						<div className="people">
+							<PeopleSearch />
+						</div>
+
+						<div className="species"></div>
+
+						<div className="locations"></div>
+					</div>
 				</div>
 			</div>
 		</>
