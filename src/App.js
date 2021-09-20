@@ -1,4 +1,4 @@
-import PrincipalPage from './components/principal-page';
+import PrincipalPage from './components/PrincipalPage';
 
 import './styles/global.scss';
 
