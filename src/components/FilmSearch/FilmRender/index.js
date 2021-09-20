@@ -23,7 +23,7 @@ export default function FilmRender() {
 			<div className="card-render">
 				{
 					items.map((item) => (
-						<Card title={item.title} />
+						<Card title={item.title} id={item.id} />
 					))
 				}
 			</div>
