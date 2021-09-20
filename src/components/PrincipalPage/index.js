@@ -7,7 +7,7 @@ export default function PrincipalPage() {
 		<>
 			<div className="general-container">
 				<div className="film-info">
-					<FilmCard />
+					<FilmCard id="2baf70d1-42bb-4437-b551-e5fed5a87abe" />
 				</div>
 
 				<div className="content">
