@@ -37,7 +37,7 @@ export default function FilmCard({ id }) {
 		};
 		
 		fetchData();
-	});
+	}, [id]);
 	
 	return (
 		<>

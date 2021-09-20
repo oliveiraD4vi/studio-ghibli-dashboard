@@ -12,6 +12,7 @@ export default function Card({ title, id }) {
 		<>
 			<div className="card-showcase" onClick={() => setFilmId(id)}>
 				<h3>{title}</h3>
+				<p>{id}</p>
 			</div>
 		</>
 	);
