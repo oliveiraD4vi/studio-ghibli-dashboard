@@ -1,3 +1,5 @@
+import { FilmInfoProvider } from './context/FilmInfoContext';
+
 import PrincipalPage from './components/PrincipalPage';
 
 import './styles/global.scss';
@@ -5,7 +7,9 @@ import './styles/global.scss';
 function App() {
   return (
     <div className="App">
-      <PrincipalPage />
+      <FilmInfoProvider>
+          <PrincipalPage />
+      </FilmInfoProvider>
     </div>
   );
 }
