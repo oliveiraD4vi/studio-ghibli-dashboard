@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import Card from '../Card';
 import axios from 'axios';
@@ -23,7 +24,11 @@ export default function FilmRender() {
 			<div className="card-render">
 				{
 					items.map((item) => (
-						<Card title={item.title} id={item.id} />
+						<Card 
+							key={uuidv4()}
+							title={item.title}
+							id={item.id}
+						/>
 					))
 				}
 			</div>
