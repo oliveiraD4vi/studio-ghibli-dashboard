@@ -1,4 +1,5 @@
 import FilmCard from '../FilmCard';
+import FilmSearch from '../FilmSearch';
 
 import './style.scss';
 
@@ -11,7 +12,9 @@ export default function PrincipalPage() {
 				</div>
 
 				<div className="content">
-					<div className="showcase-up"></div>
+					<div className="showcase-up">
+						<FilmSearch />
+					</div>
 
 					<div className="showcase-down"></div>
 
