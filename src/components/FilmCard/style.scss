@@ -1,23 +1,60 @@
 .title {
 	width: 100%;
+	
+	h4 {
+		color: #eee;
+		margin-bottom: 0;
+	}
+	
+	h5 {
+		color: #eee;
+		margin-bottom: 20px;
+	}
+	
+	.title-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #c4c4c4;
+		margin-bottom: 5px;
 
 		h2 {
 			color: #eee;
-			margin-bottom: 5px;
-			border-bottom: 1px solid #c4c4c4;
+			margin-bottom: 0px;
 		}
-
-		h4 {
-			color: #eee;
-			margin-bottom: 0;
-		}
-
-		h5 {
-			color: #eee;
-			margin-bottom: 20px;
+		
+		.menu {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0px;
+			
+			Button {
+				background-color: transparent;
+				border: none;
+				color: #eee;
+			}
+			
+			Button:hover {
+				background-color: transparent;
+				border: none;
+				color: #eee;
+			}
+			
+			Button:focus {
+				background-color: transparent;
+				border: none;
+				color: #eee;
+			}
+			
+			[ant-click-animating-without-extra-node="true"]::after,
+			.ant-click-animating-node {
+				box-shadow: none !important;
+			}
 		}
 	}
-
+}
+	
 .info {
 	.info-synopses {
 		width: 100%;
@@ -49,27 +86,12 @@
 	}
 }
 
-.menu {
-	Button {
-		background-color: transparent;
-		border: none;
+.rodape {
+	display: flex;
+	margin-bottom: 15px;
+	
+	p {
+		margin: 0px 10px 0px 0px;
 		color: #eee;
 	}
-
-	Button:hover {
-		background-color: transparent;
-		border: none;
-		color: #eee;
-	}
-
-	Button:focus {
-		background-color: transparent;
-		border: none;
-		color: #eee;
-	}
-
-	[ant-click-animating-without-extra-node="true"]::after,
-  .ant-click-animating-node {
-    box-shadow: none !important;
-  }
 }

@@ -23,8 +23,6 @@ export default function PrincipalPage() {
 					</div>
 
 					<div className="showcase-down"></div>
-
-					<div className="rodape">by Davi Oliveira | 2021</div>
 				</div>
 			</div>
 		</>

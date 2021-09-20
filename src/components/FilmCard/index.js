@@ -42,7 +42,18 @@ export default function FilmCard({ id }) {
 	return (
 		<>
 			<div className="title">
-				<h2>{item.title}</h2>
+				<div className="title-menu">
+					<h2>{item.title}</h2>
+					<div className="menu">
+						<Space direction="vertical">
+							<Space wrap>
+								<Dropdown overlay={menu} placement="bottomCenter" trigger={['click']}>
+									<Button><MenuOutlined /></Button>
+								</Dropdown>
+							</Space>
+						</Space>			
+					</div>
+				</div>
 				<h4>{item.original_title_romanised}</h4>
 				<h5>{item.original_title}</h5>
 			</div>
@@ -59,14 +70,12 @@ export default function FilmCard({ id }) {
 				</div>
 			</div>
 
-			<div className="menu">
-				<Space direction="vertical">
-					<Space wrap>
-						<Dropdown overlay={menu} placement="topCenter" trigger={['click']}>
-							<Button><MenuOutlined /> Options</Button>
-						</Dropdown>
-					</Space>
-				</Space>
+
+			<div className="rodape">
+				<p>by</p>
+				<a href = "https://github.com/oliveiraD4vi" rel="noreferrer" target="_blank">
+					<img alt="link to github" src="https://img.shields.io/static/v1?label=Overview&message=Davi&color=f8efd4&style=for-the-badge&logo=GitHub"></img>
+				</a>
 			</div>
 		</>
 	);
