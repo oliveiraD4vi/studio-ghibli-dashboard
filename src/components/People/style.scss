@@ -1,17 +1,4 @@
-.people-container::-webkit-scrollbar {
-	height: 10px;
-	background-color: #444;
-	border-radius: 5px;
-}
-
-.people-container::-webkit-scrollbar-thumb {
-	background-color: #222;
-	border-radius: 5px;
-}
-
 .people-container {
-	overflow-x: scroll;
-
 	.component-title {
 		border-bottom: 1px solid #c4c4c4;
 		margin-bottom: 10px;
